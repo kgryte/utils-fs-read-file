@@ -1,0 +1,53 @@
+{
+  "name": "utils-fs-read-file",
+  "version": "0.0.0",
+  "description": "Read the entire contents of a file.",
+  "author": {
+    "name": "Athan Reines",
+    "email": "kgryte@gmail.com"
+  },
+  "contributors": [
+    {
+      "name": "Athan Reines",
+      "email": "kgryte@gmail.com"
+    }
+  ],
+  "scripts": {
+    "test": "mocha",
+    "test-cov": "istanbul cover ./node_modules/.bin/_mocha --dir ./reports/coverage -- -R spec",
+    "codecov": "istanbul cover ./node_modules/.bin/_mocha --dir ./reports/codecov/coverage --report lcovonly -- -R spec && cat ./reports/codecov/coverage/lcov.info | codecov && rm -rf ./reports/codecov"
+  },
+  "main": "./lib",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/kgryte/utils-fs-read-file.git"
+  },
+  "keywords": [
+    "utils",
+    "utilities",
+    "utility",
+    "fs",
+    "readFile",
+    "readFileSync",
+    "path",
+    "async",
+    "sync",
+    "file",
+    "read",
+    "open",
+    "filesystem"
+  ],
+  "bugs": {
+    "url": "https://github.com/kgryte/utils-fs-read-file/issues"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "3.x.x",
+    "codecov.io": "^0.1.5",
+    "istanbul": "^0.3.0",
+    "jshint": "2.x.x",
+    "jshint-stylish": "2.x.x",
+    "mocha": "2.x.x"
+  },
+  "license": "MIT"
+}
