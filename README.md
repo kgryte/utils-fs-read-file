@@ -2,7 +2,7 @@ Read File
 ===
 [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Coverage Status][codecov-image]][codecov-url] [![Dependencies][dependencies-image]][dependencies-url]
 
-> Read the entire contents of a file.
+> Reads the entire contents of a file.
 
 
 ## Installation
@@ -23,7 +23,7 @@ var readFile = require( 'utils-fs-read-file' );
 Reads the entire contents of a file.
 
 ``` javascript
-readFile( __dirname, onFile );
+readFile( __filename, onFile );
 
 function onFile( error, data ) {
 	if ( error ) {
@@ -42,7 +42,7 @@ The function accepts the same options as [`fs.readFile()`](https://nodejs.org/ap
 Synchronously reads the contents of an entire file.
 
 ``` javascript
-var out = readFile.sync( __dirname );
+var out = readFile.sync( __filename );
 if ( out instanceof Error ) {
 	throw out;
 }
