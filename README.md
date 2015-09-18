@@ -67,7 +67,7 @@ The function accepts the same options as [`fs.readFileSync()`](https://nodejs.or
 	}
 	```
 
-	can be replaced by method which addresses existence via `error` handling.
+	can be replaced by an approach which addresses existence via `error` handling.
 
 	``` javascript
 	var readFile = require( 'utils-fs-read-file' );
