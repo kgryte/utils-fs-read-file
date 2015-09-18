@@ -1,7 +1,7 @@
 {
   "name": "utils-fs-read-file",
   "version": "0.0.0",
-  "description": "Read the entire contents of a file.",
+  "description": "Reads the entire contents of a file.",
   "author": {
     "name": "Athan Reines",
     "email": "kgryte@gmail.com"
